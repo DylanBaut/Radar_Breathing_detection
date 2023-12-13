@@ -6,4 +6,4 @@ This system is designed to detect breathing using radar to measure stomach micro
 breathing.py and not_breathing.py are files run in a Raspberry Pi environment. breathing is used to simply play back the inhale-exhale periods in red/blue increments on the LED matrix while not_breathing also will send a UDP message saying "stopped breathing" if breathing is not detected for 15 seconds. Make sure you are running UDP_server.py on another device, and that the UDP port numbers and IP addresses are matching. This can be used in tandem with graphical analysis to provide a more secure healthcare system.
 
 (.npy files ending with 47, 36, 20, and 02 are at distances of 4 cm, 8cm, 12cm, and 16cm respectively)
-(.npy files ending with 47, 55, and 07 are with three separate people)
+(.npy files ending with 47, 55, 17, and 07 are with four separate people)
