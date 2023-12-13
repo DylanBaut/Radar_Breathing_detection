@@ -7,6 +7,7 @@ import socket
 
 red = [255, 0, 0]
 blue= [0, 0, 255]
+#Will change the LED matrix depending on the relative time periods of the inhale/exhales
 def show(inh, exh):
     hue = 0
     sense.clear()
@@ -28,7 +29,7 @@ def show(inh, exh):
             break
         sleep(exh[i]-currTime)
         currTime=exh[i]
-        
+            #If there is no breathing detected for over 15 seconds, send udp message and change color to yellow.
     if flash:
         print('entered')
         sense.clear()
