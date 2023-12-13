@@ -6,6 +6,7 @@ sense=SenseHat()
 
 red = [255, 0, 0]
 blue= [0, 0, 255]
+#Will change the LED matrix depending on the relative time periods of the inhale/exhales
 def show(inh, exh):
     hue = 0
     sense.clear()
